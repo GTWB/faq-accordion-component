@@ -19,6 +19,10 @@ p {
   font-size: 16px;
 }
 
+h1 {
+  font-size: 3.2em;
+}
+
 .App {
   height: 100dvh;
   display: flex;
@@ -26,21 +30,23 @@ p {
   align-items: center;
   background-image: url("./images/background-pattern-desktop.svg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   background-color: var(--purple-100);
 }
 
 .accordion-container {
   width: 500px;
+
   background-color: var(--white);
-  padding: 2rem;
-  padding-bottom: 1rem;
+  padding: 44px;
+
   border-radius: 10px;
 }
 
 .accordion-title {
   display: flex;
   gap: 1rem;
+  margin-bottom: 38px;
 }
 
 .accordion-question {
@@ -50,11 +56,8 @@ p {
   justify-content: center;
   border-bottom: 1px lightgray solid;
   padding: 1rem 0;
+  gap: 1rem;
   overflow: hidden;
-}
-
-.accordion-question p {
-  grid-column: 1;
 }
 
 .accordion-question:hover {
@@ -64,13 +67,14 @@ p {
 
 .accordion-content {
   color: lightgray;
-  font-weight: 400;
-  padding-top: 2rem;
-
+  font-weight: 300;
+  text-align: justify;
+  height: 90px;
+  line-height: 1.4;
   grid-column: span 2;
 }
 
-@media (300px <= width <= 700px) {
+@media (max-width: 700px) {
   .App {
     background-image: url("./images/background-pattern-mobile.svg");
     background-repeat: no-repeat;
@@ -79,5 +83,10 @@ p {
 
   .accordion-container {
     width: 70%;
+    padding: 35px;
+  }
+
+  .accordion-content {
+    height: 160px;
   }
 }
