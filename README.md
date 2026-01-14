@@ -7,7 +7,7 @@ Click a question to expand/collapse the answer — perfect as a reusable FAQ sec
 
 ## Preview
 
-- Deployed demo:
+- Deployed demo: https://faq-ui-component.netlify.app/
 
 ---
 
