@@ -1,6 +1,6 @@
 # FAQ Accordion Component
 
-A simple, responsive **FAQ accordion** built with **React (Create React App)**.  
+A simple, responsive **FAQ accordion** built with **React**.  
 Click a question to expand/collapse the answer — perfect as a reusable FAQ section for a landing page or portfolio.
 
 ---
@@ -32,15 +32,19 @@ Click a question to expand/collapse the answer — perfect as a reusable FAQ sec
 
 ### 1) Clone the repo
 
-git clone https://github.com/GTWB/faq-accordion-component.git
-cd faq-accordion-component
+On your terminal:
+
+- git clone https://github.com/GTWB/faq-accordion-component.git
+- cd faq-accordion-component
 
 ### 2) Install dependecies
 
-npm install
+- npm install
 
 ### 3) Run locally
 
-npm run
+- npm run
 
 ### 4) Build for production
+
+- npm run build
